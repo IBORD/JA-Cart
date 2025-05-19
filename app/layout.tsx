@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { DefaultLayout } from "../components/templates/DefaultLayout";
 
 export const metadata = {
-  title: "teste",
+  title: "JA-Shop",
   description: "E-commerce moderno com Next.js",
 };
 
