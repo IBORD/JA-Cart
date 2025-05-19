@@ -9,7 +9,7 @@ export default function HomePage() {
     <main className="bg-gray-900 text-gray-100 min-h-screen">
       <section className="container mx-auto py-16 px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-          Bem-vindo à sua loja de estilo
+          Bem-vindo à JA-Shop
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 mb-8">
           Descubra tendências e se vista com atitude. Sua nova experiência em moda começa aqui.

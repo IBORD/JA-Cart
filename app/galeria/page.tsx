@@ -67,13 +67,13 @@ export default function GaleriaPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4 py-6 text-white">
       <h1 className="text-2xl font-bold mb-6 text-center">Galeria</h1>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {midiasMock.map((midia) => (
           <div
             key={midia.id}
-            className="relative bg-white border rounded-xl overflow-hidden shadow hover:shadow-lg transition"
+            className="relative bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
           >
             {midia.tipo === "imagem" ? (
               <img
@@ -97,10 +97,10 @@ export default function GaleriaPage() {
                   <Icon
                     icon={favoritos.includes(midia.id) ? FaHeart : FaRegHeart}
                     label="Favoritar"
-                    className={`text-xl ${
+                    className={`text-xl transition ${
                       favoritos.includes(midia.id)
                         ? "text-red-500"
-                        : "text-gray-500"
+                        : "text-gray-400 hover:text-white"
                     }`}
                   />
                 </button>
@@ -111,7 +111,7 @@ export default function GaleriaPage() {
                   <Icon
                     icon={FaShareAlt}
                     label="Compartilhar"
-                    className="text-blue-500 text-xl"
+                    className="text-blue-400 hover:text-blue-500 text-xl transition"
                   />
                 </button>
               </div>

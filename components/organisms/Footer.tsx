@@ -2,8 +2,8 @@
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-center text-sm text-gray-500 p-4 mt-10">
-      &copy; {new Date().getFullYear()} E-Shop. Todos os direitos reservados.
+    <footer className="bg-gray-900 text-center text-sm text-gray-400 p-4 mt-10 shadow-inner">
+      &copy; {new Date().getFullYear()} JA-Shop. Desenvolvido por José Alves.
     </footer>
   );
 };

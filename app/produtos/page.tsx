@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DefaultLayout } from "../../components/templates/DefaultLayout";
 import { ListProduct } from "../../components/organisms/ListProduct";
 import { SearchBar } from "../../components/molecules/SearchBar";
 import { Produto } from "../../types/product";
@@ -37,18 +36,22 @@ export default function ProductsPage() {
   };
 
   return (
-    <>
-      <div className="mb-6">
-        <SearchBar onSearch={handleSearch} />
-      </div>
+    <section className="px-4 py-10 bg-[var(--background)] text-[var(--foreground)] min-h-screen">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-3xl font-bold mb-6 text-center">Nossos Produtos</h1>
 
-      {loading ? (
-        <p className="text-center text-gray-500">Carregando produtos...</p>
-      ) : filteredProdutos.length > 0 ? (
-        <ListProduct produtos={filteredProdutos} />
-      ) : (
-        <p className="text-center text-gray-500">Nenhum produto encontrado.</p>
-      )}
-    </>
+        <div className="mb-6">
+          <SearchBar onSearch={handleSearch} />
+        </div>
+
+        {loading ? (
+          <p className="text-center text-gray-400">Carregando produtos...</p>
+        ) : filteredProdutos.length > 0 ? (
+          <ListProduct produtos={filteredProdutos} />
+        ) : (
+          <p className="text-center text-gray-400">Nenhum produto encontrado.</p>
+        )}
+      </div>
+    </section>
   );
 }

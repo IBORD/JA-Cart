@@ -12,16 +12,10 @@ interface DefaultLayoutProps {
 
 export const DefaultLayout = ({ children, pageTitle }: DefaultLayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+    <div className="flex flex-col min-h-screen" style={{ background: "var(--background)", color: "var(--foreground)" }}>
       <Navbar />
 
-      <header className="bg-white shadow">
-        <div className="container mx-auto p-4">
-          <h1 className="text-2xl font-semibold" tabIndex={-1}>
-            {pageTitle || "E-Commerce"}
-          </h1>
-        </div>
-      </header>
+      
 
       <main
         role="main"
