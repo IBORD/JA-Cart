@@ -7,10 +7,9 @@ import { Footer } from "../organisms/Footer";
 
 interface DefaultLayoutProps {
   children: ReactNode;
-  pageTitle?: string;
 }
 
-export const DefaultLayout = ({ children, pageTitle }: DefaultLayoutProps) => {
+export const DefaultLayout = ({ children}: DefaultLayoutProps) => {
   return (
     <div className="flex flex-col min-h-screen" style={{ background: "var(--background)", color: "var(--foreground)" }}>
       <Navbar />

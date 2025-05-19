@@ -18,22 +18,13 @@ export const Navbar = () => {
         >
           Produtos
         </Link>
-        <Link
-          href="/galeria"
-          className="hover:text-blue-400 transition-colors"
-        >
+        <Link href="/galeria" className="hover:text-blue-400 transition-colors">
           Galeria
         </Link>
-        <Link
-          href="/sobre"
-          className="hover:text-blue-400 transition-colors"
-        >
+        <Link href="/sobre" className="hover:text-blue-400 transition-colors">
           Sobre
         </Link>
-        <Link
-          href="/contato"
-          className="hover:text-blue-400 transition-colors"
-        >
+        <Link href="/contato" className="hover:text-blue-400 transition-colors">
           Contato
         </Link>
       </div>

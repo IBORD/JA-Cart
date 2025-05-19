@@ -61,7 +61,7 @@ export default function GaleriaPage() {
         await navigator.clipboard.writeText(url);
         alert("Link copiado para área de transferência!");
       }
-    } catch (err) {
+    } catch {
       alert("Erro ao compartilhar");
     }
   };
@@ -80,6 +80,7 @@ export default function GaleriaPage() {
                 src={midia.url}
                 alt={midia.titulo}
                 className="w-full h-64 object-cover"
+                loading="lazy"
               />
             ) : (
               <video controls className="w-full h-64 object-cover bg-black">

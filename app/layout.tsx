@@ -6,9 +6,13 @@ export const metadata = {
   description: "E-commerce moderno com Next.js",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-   <html lang="pt-BR">
+    <html lang="pt-BR">
       <body className="bg-gray-900 text-gray-100">
         <DefaultLayout>{children}</DefaultLayout>
       </body>

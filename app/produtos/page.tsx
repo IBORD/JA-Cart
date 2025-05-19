@@ -49,7 +49,9 @@ export default function ProductsPage() {
         ) : filteredProdutos.length > 0 ? (
           <ListProduct produtos={filteredProdutos} />
         ) : (
-          <p className="text-center text-gray-400">Nenhum produto encontrado.</p>
+          <p className="text-center text-gray-400">
+            Nenhum produto encontrado.
+          </p>
         )}
       </div>
     </section>
