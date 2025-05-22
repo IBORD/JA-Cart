@@ -8,7 +8,6 @@ import {
 import { Button } from "../../../components/atoms/Button";
 import { Input } from "../../../components/atoms/Input";
 import { useTranslations } from "next-intl";
-import { useEffect } from "react";
 
 export default function ContatoPage() {
   const t = useTranslations("contato");
