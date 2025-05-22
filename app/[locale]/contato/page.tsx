@@ -1,11 +1,19 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, ContactFormData } from "../../../validators/validator";
+import {
+  contactFormSchema,
+  ContactFormData,
+} from "../../../validators/validator";
 import { Button } from "../../../components/atoms/Button";
 import { Input } from "../../../components/atoms/Input";
+import { useTranslations } from "next-intl";
+import { useEffect } from "react";
 
 export default function ContatoPage() {
+  const t = useTranslations("contato");
+  const tGlobal = useTranslations();
+
   const {
     register,
     handleSubmit,
@@ -23,12 +31,12 @@ export default function ContatoPage() {
   return (
     <section className="max-w-2xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mb-6 text-center text-[var(--foreground)]">
-        Fale Conosco
+        {t("pageTitle")}
       </h1>
 
       {isSubmitSuccessful ? (
         <p className="text-green-500 text-center mb-6">
-          Mensagem enviada com sucesso! 💌
+          {t("submitSuccessMessage")} 💌
         </p>
       ) : (
         <form
@@ -37,36 +45,64 @@ export default function ContatoPage() {
         >
           <div>
             <label htmlFor="nome" className="block text-sm font-medium">
-              Nome
+              {t("form.nameLabel")}
             </label>
-            <Input id="nome" {...register("nome")} />
+            <Input
+              id="nome"
+              {...register("nome")}
+              aria-invalid={errors.nome ? "true" : "false"}
+            />
             {errors.nome && (
-              <p className="text-red-500 text-sm">{errors.nome.message}</p>
+              <p className="text-red-500 text-sm">
+                {t(
+                  `validation.name.${
+                    errors.nome.message?.includes("3 caracteres")
+                      ? "minLength"
+                      : "maxLength"
+                  }`
+                )}
+              </p>
             )}
           </div>
 
           <div>
             <label htmlFor="email" className="block text-sm font-medium">
-              E-mail
+              {t("form.emailLabel")}
             </label>
-            <Input id="email" type="email" {...register("email")} />
+            <Input
+              id="email"
+              type="email"
+              {...register("email")}
+              aria-invalid={errors.email ? "true" : "false"}
+            />
             {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email.message}</p>
+              <p className="text-red-500 text-sm">
+                {t("validation.email.invalid")}
+              </p>
             )}
           </div>
 
           <div>
             <label htmlFor="mensagem" className="block text-sm font-medium">
-              Mensagem
+              {t("form.messageLabel")}
             </label>
             <textarea
               id="mensagem"
               rows={4}
               className="mt-1 block w-full px-4 py-2 rounded-md bg-[#1a1a1a] text-white border border-gray-600"
               {...register("mensagem")}
+              aria-invalid={errors.mensagem ? "true" : "false"}
             ></textarea>
             {errors.mensagem && (
-              <p className="text-red-500 text-sm">{errors.mensagem.message}</p>
+              <p className="text-red-500 text-sm">
+                {t(
+                  `validation.message.${
+                    errors.mensagem.message?.includes("10 caracteres")
+                      ? "minLength"
+                      : "maxLength"
+                  }`
+                )}
+              </p>
             )}
           </div>
 
@@ -75,14 +111,15 @@ export default function ContatoPage() {
               type="checkbox"
               id="consentimento"
               {...register("consentimento")}
+              aria-invalid={errors.consentimento ? "true" : "false"}
             />
             <label htmlFor="consentimento" className="text-sm">
-              Concordo com os termos de aceite
+              {t("form.consentLabel")}
             </label>
           </div>
           {errors.consentimento && (
             <p className="text-red-500 text-sm">
-              {errors.consentimento.message}
+              {t("validation.consent.required")}
             </p>
           )}
 
@@ -90,7 +127,7 @@ export default function ContatoPage() {
             type="submit"
             className="w-full bg-red-600 text-white font-medium py-2 rounded hover:bg-red-700 transition"
           >
-            Enviar
+            {tGlobal("submit")}
           </Button>
         </form>
       )}

@@ -20,7 +20,8 @@
     "productsLink": "Produtos",
     "galleryLink": "Galeria",
     "aboutLink": "Sobre",
-    "contactLink": "Contato"
+    "contactLink": "Contato",
+    "languageSwitcherLabel": "Selecionar idioma"
   },
 
   "footer": {
@@ -38,7 +39,8 @@
     "aboutUsDescription": "Conheça a história por trás da nossa marca e o que nos move no mundo da moda.",
     "contactUsTitle": "Fale com a gente",
     "contactUsDescription": "Dúvidas, sugestões ou parcerias? Entre em contato conosco.",
-    "goToContactButton": "Ir para Contato"
+    "goToContactButton": "Ir para Contato",
+    "learnMore": "Saiba mais"
   },
 
   "contato": {
@@ -72,6 +74,8 @@
     "pageTitle": "Nossos Produtos",
     "noProductsFound": "Nenhum produto encontrado.",
     "addToCartButton": "Adicionar ao carrinho",
+     "loading": "Carregando produtos...",
+    "currencySymbol": "R$",
     "productName_1": "Tênis Esportivo",
     "productDescription_1": "Confortável e moderno",
     "productName_2": "Camiseta Básica",
@@ -95,12 +99,15 @@
   },
 
   "galeria": {
-    "pageTitle": "Galeria"
+    "pageTitle": "Galeria",
+    "item1Title": "Look Feminino",
+    "item2Title": "Exibição de Sapato",
+    "item3Title": "Look Masculino",
+    "noItems": "Nenhum item na galeria no momento."
   },
-
   "sobre": {
     "pageTitle": "Sobre Nós",
-    "paragraph1": "Bem-vindo à <strong>JA-Cart</strong>, o seu e-commerce de moda! Aqui você encontra roupas modernas, confortáveis e com personalidade — tudo para você se expressar com estilo em qualquer ocasião.",
+    "paragraph1": "Bem-vindo à JA-Cart, o seu e-commerce de moda! Aqui você encontra roupas modernas, confortáveis e com personalidade — tudo para você se expressar com estilo em qualquer ocasião.",
     "paragraph2": "Nossa missão é democratizar a moda de qualidade, oferecendo peças selecionadas com design atual, excelente acabamento e preços acessíveis. Trabalhamos com fornecedores confiáveis e coleções que seguem as principais tendências do mercado nacional e internacional.",
     "paragraph3": "Acreditamos que moda vai além da aparência — é sobre identidade, confiança e liberdade de escolha. Por isso, temos uma curadoria que valoriza diversidade de estilos, tamanhos e expressões.",
     "paragraph4_part1": "Em nossa loja online, você navega com facilidade, compra com segurança e recebe no conforto de casa. Além disso, você pode explorar nossa",

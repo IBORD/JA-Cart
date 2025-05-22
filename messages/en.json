@@ -20,7 +20,8 @@
     "productsLink": "Products",
     "galleryLink": "Gallery",
     "aboutLink": "About",
-    "contactLink": "Contact"
+    "contactLink": "Contact",
+    "languageSwitcherLabel": "Select language"
   },
 
   "footer": {
@@ -38,7 +39,8 @@
     "aboutUsDescription": "Learn the story behind our brand and what drives us in the world of fashion.",
     "contactUsTitle": "Talk to Us",
     "contactUsDescription": "Questions, suggestions, or partnerships? Get in touch with us.",
-    "goToContactButton": "Go to Contact"
+    "goToContactButton": "Go to Contact",
+    "learnMore": "Learn More"
   },
 
   "contato": {
@@ -72,6 +74,8 @@
     "pageTitle": "Our Products",
     "noProductsFound": "No products found.",
     "addToCartButton": "Add to cart",
+    "loading": "Loading products...",
+    "currencySymbol": "$",
     "productName_1": "Sports Sneakers",
     "productDescription_1": "Comfortable and modern",
     "productName_2": "Basic T-Shirt",
@@ -95,12 +99,16 @@
   },
 
   "galeria": {
-    "pageTitle": "Gallery"
+    "pageTitle": "Gallery",
+    "item1Title": "Female Look",       
+    "item2Title": "Shoe Display",      
+    "item3Title": "Male Look",         
+    "noItems": "No items in the gallery at the moment."
   },
 
   "sobre": {
     "pageTitle": "About Us",
-    "paragraph1": "Welcome to <strong>JA-Cart</strong>, your fashion e-commerce! Here you will find modern, comfortable, and personality-filled clothes — everything for you to express yourself with style on any occasion.",
+    "paragraph1": "Welcome to JA-Cart, your fashion e-commerce! Here you will find modern, comfortable, and personality-filled clothes — everything for you to express yourself with style on any occasion.",
     "paragraph2": "Our mission is to democratize quality fashion, offering selected pieces with current design, excellent finishing, and affordable prices. We work with reliable suppliers and collections that follow the main national and international market trends.",
     "paragraph3": "We believe that fashion goes beyond appearance — it's about identity, confidence, and freedom of choice. Therefore, we have a curation that values diversity in styles, sizes, and expressions.",
     "paragraph4_part1": "In our online store, you can browse easily, shop securely, and receive your items in the comfort of your home. Additionally, you can explore our",

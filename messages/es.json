@@ -20,7 +20,8 @@
     "productsLink": "Productos",
     "galleryLink": "Galería",
     "aboutLink": "Sobre Nosotros",
-    "contactLink": "Contacto"
+    "contactLink": "Contacto",
+    "languageSwitcherLabel": "Seleccionar idioma"
   },
 
   "footer": {
@@ -38,7 +39,8 @@
     "aboutUsDescription": "Conoce la historia detrás de nuestra marca y lo que nos mueve en el mundo de la moda.",
     "contactUsTitle": "Habla con Nosotros",
     "contactUsDescription": "¿Dudas, sugerencias o colaboraciones? Ponte en contacto con nosotros.",
-    "goToContactButton": "Ir a Contacto"
+    "goToContactButton": "Ir a Contacto",
+    "learnMore": "Más información"
   },
 
   "contato": {
@@ -72,6 +74,8 @@
     "pageTitle": "Nuestros Productos",
     "noProductsFound": "No se encontraron productos.",
     "addToCartButton": "Añadir al carrito",
+    "loading": "Cargando productos...",
+    "currencySymbol": "€",
     "productName_1": "Zapatillas Deportivas",
     "productDescription_1": "Cómodas y modernas",
     "productName_2": "Camiseta Básica",
@@ -94,13 +98,17 @@
     "productDescription_10": "Cálido para los días fríos"
   },
 
-  "galeria": {
-    "pageTitle": "Galería"
-  },
+ "galeria": {
+  "pageTitle": "Galería",
+  "item1Title": "Look Femenino",
+  "item2Title": "Exhibición de Zapatos",
+  "item3Title": "Look Masculino",
+  "noItems": "No hay elementos en la galería en este momento."
+},
 
   "sobre": {
     "pageTitle": "Sobre Nosotros",
-    "paragraph1": "¡Bienvenido a <strong>JA-Cart</strong>, tu e-commerce de moda! Aquí encontrarás ropa moderna, cómoda y con personalidad — todo para que te expreses con estilo en cualquier ocasión.",
+    "paragraph1": "¡Bienvenido a JA-Cart, tu e-commerce de moda! Aquí encontrarás ropa moderna, cómoda y con personalidad — todo para que te expreses con estilo en cualquier ocasión.",
     "paragraph2": "Nuestra misión es democratizar la moda de calidad, ofreciendo piezas seleccionadas con diseño actual, excelente acabado y precios accesibles. Trabajamos con proveedores confiables y colecciones que siguen las principales tendencias del mercado nacional e internacional.",
     "paragraph3": "Creemos que la moda va más allá de la apariencia — se trata de identidad, confianza y libertad de elección. Por eso, tenemos una curaduría que valora la diversidad de estilos, tallas y expresiones.",
     "paragraph4_part1": "En nuestra tienda online, navegas con facilidad, compras con seguridad y recibes en la comodidad de tu hogar. Además, puedes explorar nuestra",

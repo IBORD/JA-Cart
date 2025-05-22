@@ -4,6 +4,7 @@ import { FaHeart, FaRegHeart, FaShareAlt } from "react-icons/fa";
 import { Icon } from "../atoms/Icon";
 import { useGaleria } from "../../contexts/GaleriaContext";
 import { Button } from "../atoms/Button";
+import { useTranslations } from "next-intl";
 
 type Midia = {
   id: number;
@@ -14,6 +15,10 @@ type Midia = {
 
 export const GaleriaItem = ({ midia }: { midia: Midia }) => {
   const { favoritos, toggleFavorito, compartilhar } = useGaleria();
+  const t = useTranslations();
+
+  const favoriteActionLabel = t('favoriteActionLabel'); //
+  const shareActionLabel = t('shareActionLabel'); //
 
   return (
     <div className="relative bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
@@ -27,7 +32,7 @@ export const GaleriaItem = ({ midia }: { midia: Midia }) => {
       ) : (
         <video controls className="w-full h-64 object-cover bg-black">
           <source src={midia.url} type="video/mp4" />
-          Seu navegador não suporta vídeos.
+          {t("videoNotSupported")}
         </video>
       )}
       <div className="p-4 flex justify-between items-center">
@@ -35,12 +40,12 @@ export const GaleriaItem = ({ midia }: { midia: Midia }) => {
         <div className="flex gap-3">
           <Button
             onClick={() => toggleFavorito(midia.id)}
-            aria-label="Favoritar"
+            aria-label={favoriteActionLabel}
             className="bg-transparent hover:bg-transparent p-0 m-0 border-none shadow-none"
           >
             <Icon
               icon={favoritos.includes(midia.id) ? FaHeart : FaRegHeart}
-              label="Favoritar"
+              label={favoriteActionLabel}
               className={`text-xl transition ${
                 favoritos.includes(midia.id)
                   ? "text-red-500"
@@ -50,12 +55,12 @@ export const GaleriaItem = ({ midia }: { midia: Midia }) => {
           </Button>
           <Button
             onClick={() => compartilhar(midia)}
-            aria-label="Compartilhar"
+            aria-label={shareActionLabel}
             className="bg-transparent hover:bg-transparent p-0 m-0 border-none shadow-none"
           >
             <Icon
               icon={FaShareAlt}
-              label="Compartilhar"
+              label={shareActionLabel}
               className="text-blue-400 hover:text-blue-500 text-xl transition"
             />
           </Button>
