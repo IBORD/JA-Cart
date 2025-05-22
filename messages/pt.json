@@ -1,0 +1,111 @@
+{
+  "appName": "JA-Shop",
+  "learnMore": "Saber Mais",
+  "viewGallery": "Ver Galeria",
+  "viewProducts": "Ver Produtos",
+  "submit": "Enviar",
+  "loading": "Carregando",
+  "error": "Ocorreu um erro.",
+  "success": "Sucesso!",
+  "searchPlaceholder": "Buscar produtos...",
+  "searchButtonLabel": "Buscar",
+  "videoNotSupported": "Seu navegador não suporta vídeos.",
+  "favoriteActionLabel": "Favoritar",
+  "shareActionLabel": "Compartilhar",
+  "shareError": "Erro ao compartilhar",
+  "shareSuccessLinkCopied": "Link copiado para área de transferência!",
+
+  "navbar": {
+    "logoAlt": "Logo da JA-Shop",
+    "productsLink": "Produtos",
+    "galleryLink": "Galeria",
+    "aboutLink": "Sobre",
+    "contactLink": "Contato"
+  },
+
+  "footer": {
+    "copyright": "© 2025 JA-Shop. Desenvolvido por José Alves."
+  },
+
+  "home": {
+    "welcomeTitle": "Bem-vindo à JA-Shop",
+    "welcomeSubtitle": "Descubra tendências e se vista com atitude. Sua nova experiência em moda começa aqui.",
+    "viewProductsButton": "Ver Produtos",
+    "styleGalleryTitle": "Galeria de Estilo",
+    "styleGalleryDescription": "Inspire-se com looks incríveis, desfiles e vídeos da nossa comunidade fashion.",
+    "viewGalleryButton": "Ver Galeria",
+    "aboutUsTitle": "Sobre Nós",
+    "aboutUsDescription": "Conheça a história por trás da nossa marca e o que nos move no mundo da moda.",
+    "contactUsTitle": "Fale com a gente",
+    "contactUsDescription": "Dúvidas, sugestões ou parcerias? Entre em contato conosco.",
+    "goToContactButton": "Ir para Contato"
+  },
+
+  "contato": {
+    "pageTitle": "Fale Conosco",
+    "submitSuccessMessage": "Mensagem enviada com sucesso!",
+    "form": {
+      "nameLabel": "Nome",
+      "emailLabel": "E-mail",
+      "messageLabel": "Mensagem",
+      "consentLabel": "Concordo com os termos de aceite"
+    },
+    "validation": {
+      "name": {
+        "minLength": "O nome deve ter pelo menos 3 caracteres.",
+        "maxLength": "O nome não deve exceder 100 caracteres."
+      },
+      "email": {
+        "invalid": "Por favor, insira um email válido."
+      },
+      "message": {
+        "minLength": "A mensagem deve ter pelo menos 10 caracteres.",
+        "maxLength": "A mensagem não deve exceder 1000 caracteres."
+      },
+      "consent": {
+        "required": "Você deve concordar com os termos de aceite."
+      }
+    }
+  },
+
+  "produtos": {
+    "pageTitle": "Nossos Produtos",
+    "noProductsFound": "Nenhum produto encontrado.",
+    "addToCartButton": "Adicionar ao carrinho",
+    "productName_1": "Tênis Esportivo",
+    "productDescription_1": "Confortável e moderno",
+    "productName_2": "Camiseta Básica",
+    "productDescription_2": "Algodão 100%",
+    "productName_3": "Mochila Escolar",
+    "productDescription_3": "Espaçosa e resistente",
+    "productName_4": "Calça Jeans Slim",
+    "productDescription_4": "Corte justo e moderno",
+    "productName_5": "Blazer Social",
+    "productDescription_5": "Elegante para ocasiões formais",
+    "productName_6": "Vestido Floral",
+    "productDescription_6": "Leve e confortável para o verão",
+    "productName_7": "Jaqueta de Couro",
+    "productDescription_7": "Estilo casual e atemporal",
+    "productName_8": "Camisa Social",
+    "productDescription_8": "Perfeita para o ambiente de trabalho",
+    "productName_9": "Shorts Esportivo",
+    "productDescription_9": "Tecido respirável para atividades físicas",
+    "productName_10": "Suéter Tricot",
+    "productDescription_10": "Aquecedor para os dias frios"
+  },
+
+  "galeria": {
+    "pageTitle": "Galeria"
+  },
+
+  "sobre": {
+    "pageTitle": "Sobre Nós",
+    "paragraph1": "Bem-vindo à <strong>JA-Cart</strong>, o seu e-commerce de moda! Aqui você encontra roupas modernas, confortáveis e com personalidade — tudo para você se expressar com estilo em qualquer ocasião.",
+    "paragraph2": "Nossa missão é democratizar a moda de qualidade, oferecendo peças selecionadas com design atual, excelente acabamento e preços acessíveis. Trabalhamos com fornecedores confiáveis e coleções que seguem as principais tendências do mercado nacional e internacional.",
+    "paragraph3": "Acreditamos que moda vai além da aparência — é sobre identidade, confiança e liberdade de escolha. Por isso, temos uma curadoria que valoriza diversidade de estilos, tamanhos e expressões.",
+    "paragraph4_part1": "Em nossa loja online, você navega com facilidade, compra com segurança e recebe no conforto de casa. Além disso, você pode explorar nossa",
+    "paragraph4_galleryLink": "Galeria",
+    "paragraph4_part2": "para se inspirar com looks e compartilhar seus favoritos com amigos.",
+    "paragraph5": "Obrigado por vestir essa ideia com a gente! 💙 Caso tenha dúvidas, sugestões ou queira conversar, estamos sempre disponíveis para ajudar."
+  }
+}

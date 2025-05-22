@@ -1,9 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
+  const t = useTranslations("footer")
   return (
     <footer className="bg-gray-900 text-center text-sm text-gray-400 p-4 mt-10 shadow-inner">
-      &copy; {new Date().getFullYear()} JA-Shop. Desenvolvido por José Alves.
+      {t("copyright")}
     </footer>
   );
 };

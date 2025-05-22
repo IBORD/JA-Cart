@@ -39,22 +39,17 @@ describe("GaleriaItem", () => {
 
     if (!botaoFavoritar) return;
 
-    // Verifica o estado inicial do ícone
     let icone = botaoFavoritar.querySelector("svg");
     expect(icone).toBeInTheDocument();
     expect(icone).toHaveClass("text-gray-400");
 
-    // Clica para favoritar
     fireEvent.click(botaoFavoritar);
 
-    // Após o clique, pega novamente o ícone atualizado
     icone = botaoFavoritar.querySelector("svg");
     expect(icone).toHaveClass("text-red-500");
 
-    // Clica para desfavoritar
     fireEvent.click(botaoFavoritar);
 
-    // Pega o ícone atualizado após desfavoritar
     icone = botaoFavoritar.querySelector("svg");
     expect(icone).toHaveClass("text-gray-400");
   });

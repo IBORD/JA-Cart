@@ -1,9 +1,9 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, ContactFormData } from "../../validators/validator";
-import { Button } from "../../components/atoms/Button";
-import { Input } from "../../components/atoms/Input";
+import { contactFormSchema, ContactFormData } from "../../../validators/validator";
+import { Button } from "../../../components/atoms/Button";
+import { Input } from "../../../components/atoms/Input";
 
 export default function ContatoPage() {
   const {

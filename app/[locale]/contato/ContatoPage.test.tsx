@@ -1,5 +1,5 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import ContatoPage from "../contato/page";
+import ContatoPage from "./page";
 
 describe("ContatoPage", () => {
   it("renderiza o formulário com todos os campos", () => {

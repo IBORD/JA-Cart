@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Button } from "../atoms/Button";
+import { Button } from "../../../components/atoms/Button";
 
 export default function HomePage() {
   return (

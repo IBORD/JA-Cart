@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ListProduct } from "../../components/organisms/ListProduct";
-import { SearchBar } from "../../components/molecules/SearchBar";
-import { Produto } from "../../types/product";
-import { fetchProdutos } from "../../utils/api";
+import { ListProduct } from "../../../components/organisms/ListProduct";
+import { SearchBar } from "../../../components/molecules/SearchBar";
+import { Produto } from "../../../types/product";
+import { fetchProdutos } from "../../../utils/api";
 
 export default function ProductsPage() {
   const [produtos, setProdutos] = useState<Produto[]>([]);

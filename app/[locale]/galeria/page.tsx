@@ -1,8 +1,8 @@
 "use client";
 
-import { GaleriaProvider } from "../../contexts/GaleriaContext";
-import { GaleriaItem } from "../../components/organisms/GaleriaItem";
-import type { Midia } from "../../contexts/GaleriaContext";
+import { GaleriaProvider } from "../../../contexts/GaleriaContext";
+import { GaleriaItem } from "../../../components/organisms/GaleriaItem";
+import type { Midia } from "../../../contexts/GaleriaContext";
 
 const midiasMock: Midia[] = [
   {
